@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "448332869086",
+    "firebase_url": "https://solutions2016-10f18.firebaseio.com",
+    "project_id": "solutions2016-10f18",
+    "storage_bucket": "solutions2016-10f18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448332869086:android:66cf33e1e4a67d2e",
+        "android_client_info": {
+          "package_name": "com.example.rajeet.solutions2016"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448332869086-ork6dqcimn3b9in5tcvjmngcjj0tncqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rajeet.solutions2016",
+            "certificate_hash": "197DCDCB5D08125CF436106371D5335638AD1810"
+          }
+        },
+        {
+          "client_id": "448332869086-egbtttiavh0roihfaudiimivt7hc5tuk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1cln2l71uFvcn7g6IUu1sQI9GXod5ozg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448332869086-egbtttiavh0roihfaudiimivt7hc5tuk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

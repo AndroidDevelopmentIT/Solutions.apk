@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rajeet.solutions2016.RegisterActivity">
+<LinearLayout
+    android:layout_width="324dp"
+    android:layout_height="471dp"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="NAME"
+        android:padding="@dimen/fab_margin"
+        android:textAllCaps="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="40dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="COLLEGE"
+        android:padding="@dimen/fab_margin"
+        android:textAllCaps="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="89dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dropDownSelector="@color/colorPrimaryDark"
+        android:id="@+id/spinner"
+        android:padding="@dimen/fab_margin"
+        android:textAlignment="center"
+        android:scrollbarSize="@dimen/cardview_default_radius"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="139dp">
+    </Spinner>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="abc@xyz.com"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="@dimen/fab_margin"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="171dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="PHONE NUMBER"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:padding="@dimen/fab_margin"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="221dp" />
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="310dp" />
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
