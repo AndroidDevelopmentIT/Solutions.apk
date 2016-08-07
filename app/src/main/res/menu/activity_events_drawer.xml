@@ -2,13 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_camara" android:icon="@drawable/ic_action_name"
+        <item android:id="@+id/nav_camara"
+            android:icon="@android:drawable/btn_star"
             android:title="Events" />
-        <item android:id="@+id/nav_gallery" android:icon="@drawable/ic_my_status"
+        <item android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/btn_star"
             android:title="My Status" />
-        <item android:id="@+id/nav_slideshow" android:icon="@drawable/ic_log_out"
+        <item android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/btn_star"
             android:title="Log Out" />
-        <item android:id="@+id/nav_manage" android:icon="@drawable/ic_help"
+        <item android:id="@+id/nav_manage"
+            android:icon="@android:drawable/btn_star"
             android:title="Help" />
     </group>
 

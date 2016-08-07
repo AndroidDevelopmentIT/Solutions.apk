@@ -1,78 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_register"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.rajeet.solutions2016.RegisterActivity">
-<LinearLayout
-    android:layout_width="324dp"
-    android:layout_height="471dp"
+    android:layout_margin="6dp"
     android:orientation="vertical"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="0dp">
+    >
 
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/textName"
+       android:hint="NAME"
+       android:textSize="15dp"
+       android:layout_marginBottom="10dp"
+       android:gravity="center_horizontal"
+       android:layout_marginTop="50dp"
+       />
     <EditText
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/textCollege"
+        android:hint="COLLEGE"
         android:textSize="15dp"
-        android:hint="NAME"
-        android:padding="@dimen/fab_margin"
-        android:textAllCaps="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        />
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/spinner"
+       android:gravity="center_horizontal"
+       android:layout_gravity="center_horizontal">
+   </Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textemail"
+        android:inputType="textEmailAddress"
+        android:gravity="center_horizontal"
+        android:hint="abc@xyz.com"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
         />
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/textphone"
         android:textSize="15dp"
-        android:hint="COLLEGE"
-        android:padding="@dimen/fab_margin"
-        android:textAllCaps="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="89dp" />
-    <Spinner
-        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:hint="9999-999-999"
+        android:inputType="phone"/>
+
+    <Button
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:dropDownSelector="@color/colorPrimaryDark"
-        android:id="@+id/spinner"
-        android:padding="@dimen/fab_margin"
-        android:textAlignment="center"
-        android:scrollbarSize="@dimen/cardview_default_radius"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="139dp">
-    </Spinner>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:hint="abc@xyz.com"
-        android:inputType="textEmailAddress"
-        android:maxLines="1"
-        android:padding="@dimen/fab_margin"
-        android:textAllCaps="false"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="171dp" />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:hint="PHONE NUMBER"
-        android:inputType="phone"
-        android:maxLines="1"
-        android:padding="@dimen/fab_margin"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="221dp" />
-        <Button
-            android:layout_marginTop="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CONFIRM"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="310dp" />
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="SUBMIT"
+        android:id="@+id/buttonConfirm"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:backgroundTint="@color/cardview_light_background"
+        android:elevation="8dp"/>
+
 </LinearLayout>
-</android.support.constraint.ConstraintLayout>

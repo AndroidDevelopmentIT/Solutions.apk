@@ -1,8 +1,10 @@
 package com.example.rajeet.solutions2016;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,21 +18,21 @@ import android.view.MenuItem;
 public class EventsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private int i;
+    CardView cardViewAchieve ;
+    CardView cardViewPursue ;
+    CardView cardViewCompete;
+    CardView cardViewSpark ;
+    CardView cardViewExcel ;
+    private String key="K";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_events);
+        setContentView(R.layout.activity_events2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -40,6 +42,63 @@ public class EventsActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        final Intent intent = new Intent(this, RegisterActivity.class);
+
+        cardViewAchieve = (CardView) findViewById(R.id.CVachieve);
+        cardViewPursue = (CardView) findViewById(R.id.CVpursue);
+        cardViewCompete= (CardView) findViewById(R.id.CVcompete);
+        cardViewSpark = (CardView) findViewById(R.id.CVspark);
+        cardViewExcel = (CardView) findViewById(R.id.CVexcel);
+
+        cardViewAchieve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putInt(key,2);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+        cardViewCompete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putInt(key,3);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+        cardViewPursue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putInt(key, 1);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+        cardViewSpark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putInt(key,0);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+        cardViewExcel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putInt(key,4);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
